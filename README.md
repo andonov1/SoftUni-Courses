@@ -1,1 +1,1 @@
-My education in SoftUni programming basics course.
+My education in SoftUni cources.
