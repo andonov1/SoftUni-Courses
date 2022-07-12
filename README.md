@@ -1,1 +1,1 @@
-#My education in SoftUni cources.
+#My education in SoftUni courses.
