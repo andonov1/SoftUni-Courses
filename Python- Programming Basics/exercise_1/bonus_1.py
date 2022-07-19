@@ -1,0 +1,6 @@
+b1 = float(input())
+b2 = float(input())
+h = float(input())
+face = float((b1 + b2) * h / 2)
+format_face = "{:.2f}".format(face)
+print(format_face)
