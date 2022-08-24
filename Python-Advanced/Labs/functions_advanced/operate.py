@@ -1,19 +1,15 @@
+from functools import reduce
+
+
 def operate(operator, *args):
-    if operator in ('+', '-'):
-        result = 0
-    else:
-        result = 1
     if operator == '+':
-        for el in args:
-            result += el
+        result = reduce(lambda x, y: x + y, args)
     elif operator == '-':
-        for el in args:
-            result -= el
-    elif operator == '*':
-        for el in args:
-            result *= el
+        result = reduce(lambda x, y: x - y, args)
     elif operator == '/':
-        for el in args:
-            result /= el
+        result = reduce(lambda x, y: x / y, args)
+    elif operator == '*':
+        result = reduce(lambda x, y: x * y, args)
     return result
-print(operate("*", 0, 1))
+
+print(operate("*", 1, 2, 3))
